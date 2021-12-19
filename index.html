@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Happy Birthday</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body>
+		<div
+			class="
+				app
+				w-screen
+				min-h-screen
+				flex
+				items-center
+				justify-center
+				flex-col
+			"
+		>
+			<div
+				id="count-down"
+				class="mt-12 text-9xl text-center font-semibold xl:text-9xl"
+			>
+				3
+			</div>
+			<div id="gift" class="mt-52">
+				<div
+					id="lid"
+					class="
+						min-w-[200px] min-h-[45px]
+						bg-teal-400
+						flex
+						justify-center
+						border-b
+						relative
+						z-50
+					"
+				>
+					<div
+						id="bow-tie-1"
+						class="
+							w-16
+							h-16
+							absolute
+							border-8 border-yellow-200 border-solid
+							z-10
+						"
+					></div>
+					<div
+						id="bow-tie-2"
+						class="
+							w-16
+							h-16
+							absolute
+							border-8 border-yellow-200 border-solid
+							z-10
+						"
+					></div>
+					<div class="pattern min-w-[50px] bg-yellow-200"></div>
+				</div>
+				<div
+					id="container-box"
+					class="
+						min-w-[200px] min-h-[150px]
+						bg-teal-400
+						flex
+						justify-center
+						cursor-pointer
+						relative
+					"
+				>
+					<div class="pattern min-w-[50px] bg-yellow-200"></div>
+				</div>
+			</div>
+			<p></p>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>

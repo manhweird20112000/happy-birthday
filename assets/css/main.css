@@ -1,0 +1,75 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#bow-tie-1 {
+	border-radius: 22px 40px;
+	top: -48px;
+	left: 40px;
+}
+#bow-tie-2 {
+	border-radius: 40px 22px;
+	top: -48px;
+	left: 95px;
+}
+
+#lid {
+	animation: shaking 0.5s backwards 0.5s;
+	animation-iteration-count: infinite;
+	/* animation: push 1s; */
+}
+
+.push-lid {
+	animation: push 1s;
+}
+
+#count-down {
+	transform: translateY(280%);
+}
+
+.count-down {
+	animation: up 1s;
+}
+
+/* Lắc nắp hộp */
+@keyframes shaking {
+	0% {
+		transform: translateX(-7px);
+	}
+
+	20% {
+		transform: translateX(-5px);
+	}
+	40% {
+		transform: translateX(0px);
+	}
+
+	60% {
+		transform: translateX(5px);
+	}
+	80% {
+		transform: translateX(7px);
+	}
+}
+
+@keyframes push {
+	0% {
+		transform: rotate(0deg) translate(0%, 0);
+	}
+
+	100% {
+		transform: rotate(145deg) translate(-70%, -200px);
+	}
+}
+
+@keyframes up {
+	from {
+		transform: translateY(280%);
+	}
+	to {
+		transform: translateY(180%);
+	}
+}
