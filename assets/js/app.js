@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			const countDown = setInterval(() => {
 				numberCountDown--;
 				if (numberCountDown === 0) {
-					countdown.classList.add('text-5xl');
+					countdown.classList.add('text-4xl');
 					countdown.innerText = 'Happy Birthday !';
 					clearInterval(countDown);
 				} else {
@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			lid.style.transform = 'rotate(0deg) translate(0%, 0)';
 			numberCountDown = 3;
 			countdown.innerText = numberCountDown;
-			countdown.classList.remove('text-5xl');
+			countdown.classList.remove('text-4xl');
 		}
 
 		console.log(isOpen);
