@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	let countdown = document.getElementById('count-down');
 	let isOpen = false;
 	let numberCountDown = 3;
+
 	gift.addEventListener('click', () => {
 		isOpen = !isOpen;
 		if (isOpen) {
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 					countdown.classList.add('text-4xl');
 					countdown.innerText = 'Happy Birthday !';
 					clearInterval(countDown);
+					document.getElementById('audio').play();
 				} else {
 					countdown.innerText = numberCountDown;
 				}
@@ -33,6 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			numberCountDown = 3;
 			countdown.innerText = numberCountDown;
 			countdown.classList.remove('text-4xl');
+			document.getElementById('audio').pause();
+			document.getElementById('audio').currentTime = 0;
 		}
 
 		console.log(isOpen);
